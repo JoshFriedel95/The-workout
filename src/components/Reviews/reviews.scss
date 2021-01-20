@@ -1,0 +1,23 @@
+
+.review{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.reviews{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    right: 920px;
+    height: 20px;
+    width: 100px;
+    color: white;
+
+}
+#button-container{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}

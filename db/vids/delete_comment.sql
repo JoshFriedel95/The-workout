@@ -1,0 +1,1 @@
+DELETE FROM theworkout_comments WHERE id = $1;

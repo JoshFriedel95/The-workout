@@ -1,0 +1,64 @@
+$primary-color: #080c15;
+$secondary-color: #fe0034;
+$wrk-color: #fff6f8;
+$nav-color: #6f747a;
+$login-color:#dce2e7;
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    display: flex;
+    width: 60%;
+    height: 5%;
+    position: absolute;
+    justify-content: space-around;
+    margin-left: -20px;
+    z-index: 2;
+    border-radius: 10px;
+    a:link{
+        text-decoration: none;
+    }
+    h3 {
+        color: $nav-color;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    h1 {
+        border-radius: 10px;
+        font-size: 40px;
+        color: $wrk-color;
+    }
+    h4 {
+        color: $login-color;
+        display: flex;
+        position:relative;
+        justify-content: space-between;
+        margin-left: 5px;
+        margin-top: 15px;
+    }
+    h2 {
+        color:$login-color;
+    }
+    .box {
+        height: 30px;
+        width: 300px;
+    }
+    .box-2 {
+        display: flex;
+        position: relative;
+        margin-left: 2px;
+    }
+    .center-me {
+        display: flex;
+        margin-left: 20px;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+}

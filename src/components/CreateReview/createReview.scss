@@ -1,0 +1,50 @@
+$primary-color:#080c15;
+$title-font-color: #76777a;
+$font-color: #7c7d7f;
+$container-color: #e5e5e5;
+$top-container-font-color: #ffeaf5;
+
+
+
+.creview {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://themusclephd.com/wp-content/uploads/2020/08/shutterstock_612399530-scaled.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
+    .top-black{
+        background-color: #080c15;
+        width: 100%;
+        height: 5%;
+        display: flex;
+        position: absolute;
+        top: 0;
+    }
+    
+    .creview-container {
+        border-radius: 8px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+        background-color: linear-gradient($container-color, $font-color, $container-color);
+        width: 35vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 200px;
+        position: absolute;
+        color: white;
+       
+            button {
+                width: 100px;
+            }
+            
+    }
+            
+}

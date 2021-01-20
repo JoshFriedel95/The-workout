@@ -1,0 +1,76 @@
+$primary-color:#080c15;
+$title-font-color: #76777a;
+$font-color: #7c7d7f;
+$container-color: #e5e5e5;
+$top-container-font-color: #ffeaf5;
+
+
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://fbcfitness.com/_files/200000187-9d8dc9d8de/home%20website1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    
+    .login-container {
+        border-radius: 8px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+        background-image: linear-gradient($container-color, $font-color, $container-color);
+        width: 35vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        position: absolute;
+
+        h2 {
+            display: flex;
+            position: absolute;
+            margin-bottom: 50px;
+        }
+        
+        .login-title {
+            font-size: 80px;
+            font-weight: 700;
+            color: black;
+        }
+        
+       
+        
+        .login-box {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 0%;
+            color: $primary-color;
+            
+        }
+        
+        .login-input-box > input {
+            height: 35px;
+            margin-left: 10px;
+            border: none;
+        }
+            
+            .login-button-container {
+                display: flex;
+                position: relative;
+                justify-content: space-around;
+                width: 10%;
+                height: 5%;
+            }
+            button {
+                width: 200px;
+            }
+            
+        }
+            
+    }

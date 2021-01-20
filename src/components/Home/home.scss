@@ -1,0 +1,267 @@
+$primary-color:#080c15;
+$secondary-color: #fe0034;
+$title-font-color: #76777a;
+$font-color: #7c7d7f;
+$container-color: #e5e5e5;
+$top-container-font-color: #ffeaf5;
+$border: 20px;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background-color: $primary-color;
+    color: $font-color;
+};
+
+.home {
+    height: 100vh;
+    width: 100%;
+
+    .trainer-one {
+        background-image: url(https://images-na.ssl-images-amazon.com/images/I/71fLF6r6A6L._AC_SX466_.jpg);
+        height: 250px;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        position: absolute;
+        bottom: 550px;
+        left: 750px;
+        
+    }
+
+    .top-right {
+        display: flex;
+        position: absolute;
+        bottom: 600px;
+        left: 10px;
+        width: 700px;
+        color: white;
+        font-size: 45px;
+        font-weight: bolder;
+    }
+    .lower{
+        font-size: 15px;
+        font-family: 'Imbue', serif;
+        color: $title-font-color;
+        width: 220px;
+        margin-top: 10px;
+        margin-left: 250px;
+    }
+    .trainer-two{
+        background-image: url(https://image1.masterfile.com/getImage/NzAwLTAwMDMyNzU3ZW4uMDAwMDAwMDA=AKvf2H/700-00032757en_Masterfile.jpg);
+        height: 275px;
+        width: 10%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: flex;
+        position: absolute;
+        top: 650px;
+        left: 900px;
+    }
+
+    .review{
+        display: flex;
+        position: absolute;
+        bottom: 100px;
+        right: 120px;
+        height: 300px;
+        width: 700px;
+        color: white;
+        .review-title{
+            width: 800px;
+            height: 50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .review-name {
+            display: flex;
+            position: relative;
+            width: 100px;
+            height: 50px;
+            left: 550px;
+            top: 50px;
+            color: white;
+        }
+        .review-pic {
+            display: flex;
+            position: relative;
+            width: 70px;
+            height: 50px;
+            left: 650px;
+            bottom: 260px;
+            border-radius: 80%;
+        }
+        .review-content {
+            height: 200px;
+            color: white;
+            font-size: 20px;
+        }
+    }
+    .review-us{
+        display: flex;
+        position:absolute;
+        flex-direction: row;
+        bottom: 230px;
+        right: 500px;
+        height: 100px;
+        width: 200px;
+        color: white;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;
+    }
+    
+    .background-bottom{
+        background-image: linear-gradient($primary-color, $container-color);
+        height: 475px;
+        width: 800px;
+        display:flex;
+        position: absolute;
+        bottom: 0;
+    }
+    .background-top {
+        background-image: linear-gradient($container-color, $primary-color);
+        height: 475px;
+        width: 790px;
+        display: flex;
+        position: absolute;
+        right: 0;
+        z-index: 2;
+    }
+
+    .left-container{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        background-color: $container-color;
+        height: 400px;
+        width: 700px;
+        margin-left: 50px;
+        border-radius: $border;
+        margin-bottom: 40px;
+        p {
+            display: flex;
+            color: $title-font-color;
+            font-size: 13px;
+            margin-top: 10px;
+            margin-left: 50px;
+            flex-direction: column;
+            width: 200px;
+        }
+        #strength{
+            display: flex;
+            position: absolute;
+            margin-left: 350px;
+            bottom: 200px;
+        }
+        #cardio{
+            display: flex;
+            position: absolute;
+            margin-left: 350px;
+            bottom: 70px;
+        }
+        article {
+            color: $primary-color;
+            font-weight: bolder;
+            margin-left: 65px;
+        }
+        h2 {
+            color: $primary-color;
+            text-decoration: underline;
+        }
+    }
+    .right-container {
+        background-color: $container-color;
+        display: flex;
+        position: absolute;
+        right: 0;
+        width: 700px;
+        height: 400px;
+        color: $title-font-color;
+        justify-content: space-evenly;
+        border-radius: 20px;
+        margin-right: 30px;
+        margin-top: 75px;
+        #one{
+            display: flex;
+            flex-direction: column;
+            margin-right: 50px;
+            font-size: 15px;
+            width: 175px;
+            color: black;
+        }
+        .two {
+            display: flex;
+            flex-direction: column;
+            width: 175px;
+            font-size: 15px;
+            color: black;
+        }
+        .three{
+            display: flex;
+            flex-direction: column;
+            width: 175px;
+            font-size: 15px;
+            margin-right: 50px;
+            margin-left: 25px;
+            color: black;
+        }
+        .title{
+            margin-top: 20px;
+            margin-left: -500px;
+            font-size: 12px;
+            font-weight: bold;
+            height: 30px;
+            width: 100px;
+            // text-decoration: underline;
+            color: $title-font-color;
+            display: flex;
+            position: absolute;
+            // justify-content: left;
+        }
+        #title{
+            font-weight: bolder;
+            font-size: 15px;
+            text-decoration: underline;
+        }
+        div {
+            background-color: $container-color;
+            border-radius: 20px;
+            p{
+                display: flex;
+                margin-top: 50px;
+                justify-content: space-evenly;
+            }
+        }
+        #inner-right-container {
+            background-color: $primary-color;
+            height: 200px;
+            width: 400px;
+            position: absolute;
+            margin-top: 200px;
+            p{
+                color: $top-container-font-color;
+            }
+            #content{
+                margin-top: 25px;
+            }
+           
+        }
+        .bottom-title{
+            margin-top: 0;
+            color: $top-container-font-color;
+            font-weight: bolder;
+            
+        }
+        .posture{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
