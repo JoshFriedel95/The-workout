@@ -63,6 +63,20 @@ div {
         position: absolute;
         top: 650px;
         left: 900px;
+        z-index: 0;
+    }
+    .dominate {
+        display: flex;
+        position: absolute;
+        top: 250px;
+        left: 925px;
+        height: 200px;
+        width: 100px;
+        color: white;
+        background-color: transparent;
+        font-weight: bolder;
+        z-index: 2;
+        font-size: 25px;
     }
 
     .review{

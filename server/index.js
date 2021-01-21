@@ -28,9 +28,6 @@ app.post('/api/auth/login', usersCtrl.login)
 app.get('/api/auth/user', usersCtrl.getUser)
 app.post('/api/auth/logout', usersCtrl.logout)
 
-app.get('*', (req,res) => {
-    res.sendFile(path.join(__dirname, '../build/index.html'))
-})
 
 app.post('/api/contact', nodeCtrl.sendEmail)
 app.post('/api/plans', stripeCtrl.payment)
@@ -44,10 +41,10 @@ app.post('/api/reviews/:id', postsCtrl.editReview)
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: USER,
-      pass: PASSWORD
+        user: USER,
+        pass: PASSWORD
     }
-  });
+});
 
 massive({
     connectionString: CONNECTION_STRING,
@@ -59,4 +56,7 @@ massive({
     app.set('transporter', transporter)
     console.log('DB Ready')
     app.listen(SERVER_PORT, () => console.log(`Running on ${SERVER_PORT}`))
+})
+app.get('*', (req,res) => {
+    res.sendFile(path.join(__dirname, '../build/index.html'))
 })

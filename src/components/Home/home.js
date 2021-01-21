@@ -38,6 +38,7 @@ const Home = () => {
                 </p>
                 </p>
             </div>
+            <div className='dominate'>DOMINATE.</div>
 
         <div className='left-container'>
             <article> Our trainers follow our 5 key pillars of fitness to get you in top condition
