@@ -11,7 +11,7 @@ const Reviews = () => {
         axios.get('/api/reviews').then (res => {
             setReviews(res.data)
         })
-    },[setReviews])
+    },[])
 
     function deleteReview(id) {
         console.log(id)

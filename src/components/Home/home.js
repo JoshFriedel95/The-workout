@@ -5,12 +5,12 @@ import axios from 'axios'
 
 const Home = () => {
     const [reviews, setReviews] = useState([])
-    const url = axios.get('/api/review')
+    // const url = axios.get('/api/review')
     useEffect(() => {
-        url.then (res => {
+        axios.get('/api/reviews').then (res => {
             setReviews(res.data)
         })
-    },[url])
+    },[])
     const reviewsMapped = reviews.map(reviewObj => {
         return( 
          <div key={reviewObj.comment_id}>
