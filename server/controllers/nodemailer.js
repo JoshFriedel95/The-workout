@@ -1,6 +1,6 @@
 
 const mailOptions = {
-  from: `The Workout <no-reply-theworkout.com`,
+  from: `The Workout <no-reply-theworkout.com>`,
   to: 'joshtest62@gmail.com', 
   subject: 'New Contact',
 };

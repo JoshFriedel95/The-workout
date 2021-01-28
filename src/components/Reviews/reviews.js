@@ -6,12 +6,12 @@ import './reviews.scss'
 
 const Reviews = () => {
     const [reviews, setReviews] = useState([])
-    const url = axios.get('/api/reviews')
+    // const url = axios.get('/api/reviews')
     useEffect(() => {
-        url.then (res => {
+        axios.get('/api/reviews').then (res => {
             setReviews(res.data)
         })
-    },[url])
+    },[])
 
     function deleteReview(id) {
         console.log(id)
