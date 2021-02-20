@@ -3,7 +3,6 @@ import {Switch, Route} from 'react-router-dom'
 import Form from './components/Form/form'
 import Home from './components/Home/home'
 import Plans from './components/Plans/plans'
-import Profile from './components/Profile/profile'
 import Login from './components/Login/login'
 import Reviews from './components/Reviews/reviews'
 import Register from './components/Register/register'
@@ -14,7 +13,6 @@ export default (
         <Route exact path = '/' component={Home} />
         <Route path = '/plans' component={Plans} />
         <Route path = '/contact' component={Form}/>
-        <Route path = '/profile/:profile_id' component={Profile}/>
         <Route path = '/login' component={Login}/>
         <Route path = '/reviews' component={Reviews} />
         <Route path = '/register' component={Register} />

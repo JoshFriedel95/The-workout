@@ -30,11 +30,12 @@ const Nav = (props) => {
         <Link to='/reviews'>
             <h3>Reviews</h3>
         </Link>
-        <Link to='/profile/:profile_id'>
-            <h3>Profile</h3>
-        </Link>
         <h2 className='center-me'>Welcome {props.username}</h2>
         <div className='box-2'>
+            {props.isLoggedIn ? (
+                <div></div>
+            ) : (
+        <span className='box-2'>
         <Link to='/login'>
             <h4>Login</h4>
         </Link>
@@ -42,10 +43,16 @@ const Nav = (props) => {
         <Link to='/register'>
             <h4>Register</h4>
         </Link>
+        </span>
+            )}
         </div>
+        {props.isLoggedIn ? (
         <Link to='/' onClick={() => logout()}>
             <h3>Logout</h3>
         </Link>
+        ) : (
+            <div></div>
+        )}
     </div>
      )
     }

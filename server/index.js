@@ -10,7 +10,7 @@ const usersCtrl = require('./controllers/users')
 const postsCtrl = require('./controllers/posts')
 const nodeCtrl = require('./controllers/nodemailer')
 const stripeCtrl = require('./controllers/stripe')
-const authMiddleware = require('./middleware/verifyUser')
+// const authMiddleware = require('./middleware/verifyUser')
 
 
 const app = express()
@@ -33,7 +33,7 @@ app.post('/api/contact', nodeCtrl.sendEmail)
 app.get('/api/review', postsCtrl.readReview)
 app.get('/api/reviews', postsCtrl.readReviews)
 
-app.use(authMiddleware.isAuthenticated)
+
 app.post('/api/plans', stripeCtrl.payment)
 app.post('/api/review', postsCtrl.createReview)
 app.delete('/api/reviews/:id', postsCtrl.deleteReview)

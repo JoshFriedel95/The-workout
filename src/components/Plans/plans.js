@@ -22,24 +22,25 @@ function Plans() {
     name='Diet & Exercise Plans'
     shippingAddress
     billingAddress>
-      <div className='nutrition'>
+      <div className='mini-container'>
         <h1>Nutrition Plan</h1>
         <ol>
           <li>Six Week nutrition guide tailored just for you</li>
-          <li>Bi-weekly updates & changes if need be</li>
-          <li>Weekly Check-ins from your trainer</li>
+          <li>weekly updates & changes made to your plan</li>
+          <li>Weekly Check-ins from your personal trainer</li>
           <li>Ability to contact your trainer during the day</li>
         </ol>
-      </div>
         <button onClick={() => setProduct({
-      nutritionPrice: 'Purchased',
-      exercisePrice: '$75',
-      bothPrice: '$150'
-      })}>{product.nutritionPrice}</button>
+          nutritionPrice: 'Purchased',
+          exercisePrice: '$75',
+          bothPrice: '$150'
+        })}>{product.nutritionPrice}</button>
+        </div>
+        <div className='mini-container'>
       <h1>Exercise Plan</h1>
       <ol>
         <li>Six week workout plan tailored for your needs</li>
-        <li>Weekly check-ins from your trainer</li>
+        <li>Weekly check-ins from your personal trainer</li>
         <li>Ability to contact your trainer during the day</li>
       </ol>
       <button onClick={() => setProduct({
@@ -47,10 +48,12 @@ function Plans() {
       exercisePrice: 'Purchased',
       bothPrice: '$150'
       })}>{product.exercisePrice}</button>
+      </div>
+      <div className='mini-container'>
       <h1>Diet & Exercise Plan</h1>
       <ol>
-        <li>Eight week workout & diet plan</li>
-        <li>Daily check-ins from your trainer</li>
+        <li>Eight week workout & diet plan customized</li>
+        <li>Daily check-ins from your personal trainer</li>
         <li>Ability to contact your trainer during the day</li>
       </ol>
       <button onClick={() => setProduct({
@@ -58,6 +61,7 @@ function Plans() {
       exercisePrice: '$75',
       bothPrice: 'Purchased'
       })}>{product.bothPrice}</button>
+      </div>
       </StripeCheckout>
       </div>
     </div>

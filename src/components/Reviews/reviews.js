@@ -26,7 +26,7 @@ const Reviews = () => {
             
                 
                <div className='delete-button'>
-            <button onClick={() => deleteReview(reviewObj.comment_id)}>Delete Review</button>
+            {/* <button onClick={() => deleteReview(reviewObj.comment_id)}>Delete Review</button> */}
                 </div>
             <div className='author-box'>
             <h2 className='reviews-title'>{reviewObj.main_title}</h2>

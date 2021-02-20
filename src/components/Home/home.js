@@ -5,7 +5,6 @@ import axios from 'axios'
 
 const Home = () => {
     const [reviews, setReviews] = useState([])
-    // const url = axios.get('/api/review')
     useEffect(() => {
         axios.get('/api/review').then (res => {
             setReviews(res.data)
@@ -34,7 +33,7 @@ const Home = () => {
                 <p>
                 The Ultimate Online Personal Training Plans
                 <p className='lower'>
-                Reach your body goals, boost your energy for life anytime, everywhere
+                Reach your body goals, boost your energy for life anytime, anywhere.
                 </p>
                 </p>
             </div>
